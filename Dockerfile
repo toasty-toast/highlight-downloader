@@ -19,4 +19,4 @@ ENV YOUTUBE_DATA_API_KEY ""
 COPY --from=builder /usr/local/lib/python3.8/ /usr/local/lib/python3.8/
 COPY src/*.py ./
 
-ENTRYPOINT /app/src/main.py
+ENTRYPOINT /app/main.py
