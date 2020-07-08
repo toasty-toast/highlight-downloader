@@ -1,4 +1,4 @@
-# Highllight Downloader
+# Highlight Downloader
 
 ## Background
 
