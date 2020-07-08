@@ -15,6 +15,7 @@ FROM base as final
 WORKDIR /app
 RUN mkdir -p /downloads
 ENV YOUTUBE_DATA_API_KEY ""
+ENV PYTHONUNBUFFERED 1
 
 RUN apt-get update -y && \
     apt-get install -y ffmpeg && \
@@ -23,4 +24,4 @@ RUN apt-get update -y && \
 COPY --from=builder /usr/local/lib/python3.8/ /usr/local/lib/python3.8/
 COPY src/*.py ./
 
-ENTRYPOINT /app/main.py
+CMD /app/main.py
