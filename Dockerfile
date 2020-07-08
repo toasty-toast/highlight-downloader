@@ -16,6 +16,10 @@ WORKDIR /app
 RUN mkdir -p /downloads
 ENV YOUTUBE_DATA_API_KEY ""
 
+RUN apt-get update -y && \
+    apt-get install -y ffmpeg && \
+    apt-get clean
+
 COPY --from=builder /usr/local/lib/python3.8/ /usr/local/lib/python3.8/
 COPY src/*.py ./
 
