@@ -19,8 +19,8 @@ NBC_SPORTS_CHANNEL_ID = 'UCqZQlzSHbVJrwrn5XvzrzcA'
 
 
 def main():
-    run_download()
     print(f'Scheduling downloads to run every {RUN_INTERVAL} minutes')
+    run_download()
     schedule.every(RUN_INTERVAL).minutes.do(run_download)
     while True:
         schedule.run_pending()
