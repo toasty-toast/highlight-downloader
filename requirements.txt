@@ -36,7 +36,7 @@ pytz==2020.1
 regex==2020.6.8
 requests==2.24.0
 rope==0.17.0
-rsa==4.6
+rsa==4.7
 schedule==0.6.0
 singledispatch==3.4.0.3
 six==1.15.0
