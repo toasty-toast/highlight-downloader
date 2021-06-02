@@ -44,7 +44,7 @@ tmdbsimple==2.4.1
 toml==0.10.1
 tqdm==4.47.0
 uritemplate==3.0.1
-urllib3==1.25.9
+urllib3==1.26.5
 virtualenv==20.0.26
 wordcloud==1.7.0
 wrapt==1.12.1
